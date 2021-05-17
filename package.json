@@ -1,0 +1,32 @@
+{
+  "name": "teste-parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "browserslist": "last 4 version",
+  "scripts": {
+    "dev": "parcel index.html --open -p 4000",
+    "build": "parcel build *.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.2.15",
+    "sass": "^1.32.13"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.0.0",
+    "parcel": "^2.0.0-nightly.665",
+    "postcss-modules": "^4.0.0"
+  },
+   "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          "> 1%",
+          "last 4 versions",
+          "ie >= 9"
+        ]
+      }
+    }
+  }
+}
